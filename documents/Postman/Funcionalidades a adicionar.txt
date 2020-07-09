@@ -1,0 +1,6 @@
+Faltam adicionar as seguintes adições e correções:
+
+05/05/20 - Corrigir o modelo da Aula para também aceitar quem é o Professor
+05/05/20 - Adicionar no método de deletar aluno(a) da aula, para primeiro verificar se o aluno está na aula, e só depois deletá-lo
+05/05/20 - Implementar o cálculo da avaliação física, Pollock 3 dobras e 7 dobras
+

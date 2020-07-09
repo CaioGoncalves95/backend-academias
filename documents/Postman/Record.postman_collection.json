@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "8a4ecf1f-5675-422d-bb32-cb7830ee15e3",
+		"name": "Record",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createRecord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"student\": \"5eaa203a66143e59e9adcd3e\",\r\n  \"number\": \"A\",\r\n  \"initialDate\": \"2020-04-29\",\r\n  \"finalDate\": \"2020-06-29\",\r\n  \"exercices\": [{\r\n      \"name\": \"5eaa264a4c61f888fd3f5e10\",\r\n      \"group\": \"5eaa264a4c61f888fd3f5e10\",\r\n      \"series\": \"3\",\r\n      \"rep1\": \"12\",\r\n      \"rep2\": \"12\",\r\n      \"rep3\": \"12\",\r\n      \"rep4\": \"\",\r\n      \"rep5\": \"\",\r\n      \"rep6\": \"\",\r\n      \"load\": \"20\",\r\n      \"typeLoad\": \"Kg\"\r\n    },\r\n    {\r\n      \"name\": \"5eaa26554c61f888fd3f5e11\",\r\n      \"group\": \"5eaa26554c61f888fd3f5e11\",\r\n      \"series\": \"4\",\r\n      \"rep1\": \"12\",\r\n      \"rep2\": \"10\",\r\n      \"rep3\": \"8\",\r\n      \"rep4\": \"6\",\r\n      \"rep5\": \"\",\r\n      \"rep6\": \"\",\r\n      \"load\": \"Pl\",\r\n      \"typeLoad\": \"5\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/records",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRecords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/records",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteRecord",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "9f555064-262a-498f-aea3-e4a783b13a3a",
+		"name": "Classes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createClass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"gym\": \"5ea8c00daaae17d5f8bac253\",\r\n  \"description\": \"Boxe\",\r\n  \"date\": [{ \r\n    \"day\": \"2020-04-30\",\r\n    \"initalTime\": \"2020-04-30T19:00:00Z\", \r\n    \"endTime\": \"2020-04-30T20:00:00Z\"\r\n  }],\r\n  \"maxStudents\": \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/classes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClass",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/classes/5eab32657fca46ca31f74155",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						"5eab32657fca46ca31f74155"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllClasses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/classes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertStudentIntoClass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/classes/5eab571188e4f600223414a1/5eaa0e7e0d39aa4999b34a68",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						"5eab571188e4f600223414a1",
+						"5eaa0e7e0d39aa4999b34a68"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudenFromClass",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/classes/5eab6b1ccc0d471516e85d2e/5eaa203a66143e59e9adcd3e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"classes",
+						"5eab6b1ccc0d471516e85d2e",
+						"5eaa203a66143e59e9adcd3e"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

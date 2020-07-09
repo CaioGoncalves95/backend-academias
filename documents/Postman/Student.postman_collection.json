@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "834c5abd-5485-454f-881d-b745d4183126",
+		"name": "Student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"gym\": \"5ea8c917bd2e60d26cfa24a5\",\r\n  \"cpf\": \"456789123457\",\r\n  \"registration\": \"1\",\r\n  \"registrationDate\": \"2020-04-29\",\r\n  \"name\": \"Caio Silva Gonçalves\",\r\n  \"birthDate\": \"1995-03-29\",\r\n  \"email\": \"caiogoncalves95@hotmail.com\",\r\n  \"cellphone\": \"32991588850\",\r\n  \"photo\": \"\",\r\n  \"postalCode\": \"36060300\",\r\n  \"street\": \"Rua Diva Garcia\",\r\n  \"number\": \"1663\",\r\n  \"complement\": \"Ap 101\",\r\n  \"city\": \"Juiz de Fora\",\r\n  \"state\": \"MG\",\r\n  \"profession\": \"Engenheiro de Software\",\r\n  \"paymentOption\": \"monthly\",\r\n  \"monthlyRevenue\": \"79.90\",\r\n  \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/students",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/5eaa203a66143e59e9adcd3e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"5eaa203a66143e59e9adcd3e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentsByGym",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/students/gym/5ea8c917bd2e60d26cfa24a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"gym",
+						"5ea8c917bd2e60d26cfa24a5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

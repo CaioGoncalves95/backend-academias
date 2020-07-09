@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "822c0750-afc0-4af1-a20b-e57f710803db",
+		"name": "Bill",
+		"description": "Methods to test the API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createBill",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"gym\": \"5ea8c917bd2e60d26cfa24a5\",\r\n  \"description\":\"Conta de Luz\",\r\n  \"dueDate\": \"2020-05-20\",\r\n  \"value\": \"345.85\",\r\n  \"paid\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/bills/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bills",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBillByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bills/5ea8cf02707247f244d47144",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bills",
+						"5ea8cf02707247f244d47144"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllBills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bills",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBillsByGym",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bills/gym/5ea8c917bd2e60d26cfa24a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bills",
+						"gym",
+						"5ea8c917bd2e60d26cfa24a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBill",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bills/5ea8cdc75460b0cd0042f57b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bills",
+						"5ea8cdc75460b0cd0042f57b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBill",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"gym\": \"5ea8c917bd2e60d26cfa24a5\",\r\n  \"description\":\"Conta de Água\",\r\n  \"dueDate\": \"2020-05-20\",\r\n  \"value\": \"145.20\",\r\n  \"paid\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/bills/5ea8cf02707247f244d47144",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bills",
+						"5ea8cf02707247f244d47144"
+					]
+				},
+				"description": "update a bill"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

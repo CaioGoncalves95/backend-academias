@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "bbf6bd87-e4b3-f4fc-6b62-dee65fc070dd",
+		"name": "Owner",
+		"description": "Collection to test Owner's methods on API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllOwners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/owners/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owners",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOwnerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/owners/5ea8a4719d892e1fc8acd22d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owners",
+						"5ea8a4719d892e1fc8acd22d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createOwner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Caio Silva Gonçalves\",\r\n  \"email\": \"caiogoncalves95@hotmail.com\",\r\n  \"phone\": \"32991588850\",\r\n  \"password\": \"k4n5v3m8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/owners",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owners"
+					]
+				},
+				"description": "POST to create a owner on database"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOwner",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/owners/5ea8c121aaae17d5f8bac254",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owners",
+						"5ea8c121aaae17d5f8bac254"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateOwner",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Caio Silva\",\r\n  \"email\": \"caiogoncalves95@hotmail.com\",\r\n  \"phone\": \"32991588850\",\r\n  \"password\": \"k4n5v3m8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/owners/USERID",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owners",
+						"USERID"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

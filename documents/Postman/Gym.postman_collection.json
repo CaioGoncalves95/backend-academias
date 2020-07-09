@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "f635cc9e-893a-4b5c-9ac3-4e07a23f222f",
+		"name": "Gym",
+		"description": "Collection to test all methods of the API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addGym",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"owner\": \"5ea8c00daaae17d5f8bac253\",\r\n  \"cnpj\": \"10330113000109\",\r\n  \"companyName\": \"Academia Zuchi LTDA- ME\",\r\n  \"fantasyName\": \"Zuchi BodyFit\",\r\n  \"email\": \"zuchi@bodyfit.com.br\",\r\n  \"password\": \"k4n5v3m8\",\r\n  \"phone\": \"3232186367\",\r\n  \"postalCode\": \"36060300\",\r\n  \"street\": \"Rua Diva Garcia\",\r\n  \"number\": \"1663\",\r\n  \"complement\": \"\",\r\n  \"city\": \"Juiz de Fora\",\r\n  \"state\": \"MG\",\r\n  \"paymentOption\": \"monthly\",\r\n  \"monthlyRevenue\": \"119.90\",\r\n  \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/gyms",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gyms"
+					]
+				},
+				"description": "Adding a gym to a owner"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllGyms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/gyms",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gyms"
+					]
+				},
+				"description": "Get all gyms"
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/gyms/5ea8c597d59683b30cc2287d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gyms",
+						"5ea8c597d59683b30cc2287d"
+					]
+				},
+				"description": "get gym by id"
+			},
+			"response": []
+		},
+		{
+			"name": "getGymsByOwner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/gyms/owner/5ea8c00daaae17d5f8bac253",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gyms",
+						"owner",
+						"5ea8c00daaae17d5f8bac253"
+					]
+				},
+				"description": "Get all gys by owner"
+			},
+			"response": []
+		},
+		{
+			"name": "updateGym",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"owner\": \"5ea8c00daaae17d5f8bac253\",\r\n  \"cnpj\": \"10330113000109\",\r\n  \"companyName\": \"Academia Zuchi\",\r\n  \"fantasyName\": \"Zuchi BodyFit\",\r\n  \"email\": \"zuchi@bodyfit.com.br\",\r\n  \"password\": \"k4n5v3m8\",\r\n  \"phone\": \"3232186367\",\r\n  \"postalCode\": \"36060300\",\r\n  \"street\": \"Rua Diva Garcia\",\r\n  \"number\": \"1663\",\r\n  \"complement\": \"\",\r\n  \"city\": \"Juiz de Fora\",\r\n  \"state\": \"MG\",\r\n  \"paymentOption\": \"monthly\",\r\n  \"monthlyRevenue\": \"129.90\",\r\n  \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/gyms/5ea8c597d59683b30cc2287d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gyms",
+						"5ea8c597d59683b30cc2287d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteGym",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/gyms/5ea8c597d59683b30cc2287d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gyms",
+						"5ea8c597d59683b30cc2287d"
+					]
+				},
+				"description": "delete a gym by it's id"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
